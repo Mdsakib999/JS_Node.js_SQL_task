@@ -1,0 +1,426 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0; 
+}
+
+.container {
+    width: 80%; 
+    max-width: 800px; 
+    margin: auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.background-image {
+    background-image: url('https://img.freepik.com/free-photo/3d-gym-equipment_23-2151114137.jpg?t=st=1709701723~exp=1709705323~hmac=01926c49a50006bf08c6ae5f35680030dfc604c86cb549c0fc2e2c68ef73eda1&w=996');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden; 
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.content1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    text-align: center;
+    color: white; 
+}
+
+.content1 h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* gradient button */
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
+    margin: 30px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    border: none;
+    /* display: block; */
+  }
+
+  .btn-grad:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+
+/*  */
+.formImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+
+.cont {
+    margin: 50px 0px 0px 70px;
+    padding: 20px;
+    width: 40%; 
+    border: 2px solid #8293ff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.cont:hover {
+    transform: scale(1.02); 
+}
+
+.form-container {
+    flex: 1;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 70%; 
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="file"] {
+    display: block;
+    text-align: center;
+    width: 90%; 
+    padding: 10px;
+    border: 2px solid black;
+    margin: 15px auto;
+    font-size: 20px; 
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease; 
+}
+
+.form input[type="text"]:focus,
+.form input[type="number"]:focus,
+.form input[type="file"]:focus {
+    border-color: #8293ff; 
+}
+
+.cont h1 {
+    font-family: 'Style Script', cursive;
+    text-align: center;
+    font-size: 50px; 
+    margin-bottom: 30px; 
+}
+
+form .btns {
+    display: block;
+    width: 50%;
+    padding: 12px 8px; 
+    margin: 30px auto;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
+    color: white;
+    transition: background-color 0.3s ease; 
+}
+
+form .btns:hover {
+    background-color: #45a049; 
+}
+
+/* drop  */
+#dropzone {
+    border: 2px dashed #aaa;
+    padding: 20px;
+    width: 89%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+#dropzone.hover {
+    background-color: #f0f0f0;
+}
+
+
+/* service */
+.section{
+    color: rgb(230, 222, 222);
+    font-family: sans-serif;
+}
+.services{
+    padding: 50px 60px;
+    margin: auto;
+}
+.services h1{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+.services h1::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background-color: rgb(65, 12, 12);
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.card{
+    width: calc(34% - 20px);
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    margin:  50px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.box i{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.box h3{
+    font-size: 32px;
+}
+.box p{
+    margin: 15px 0;
+    font-weight: 400;
+}
+.box a{
+    text-decoration: none;
+    color: crimson;
+    font-size: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.box a:hover{
+    color: rgb(49, 196, 4);
+}
+.card:hover .box i{
+    background: linear-gradient(90deg, #8393ff 30%, #1d98f0);
+    border: none;
+}
+.card::after{
+    content: "";
+    position: absolute;
+    height: 105%;
+    width: 100%;
+    background-color: rgb(255, 254, 254);
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(15deg);
+    transition: all 0.5s ease;
+}
+.card:hover::after{
+    transform: rotate(-15deg);
+    background: linear-gradient(90deg, #8393ff 30%, #1d98f0);
+}
+
+
+
+/* Pricing */
+
+.section6{
+    margin-bottom: 50px;
+    
+}
+.section6 .text6{
+    text-align: center;
+    padding: 3% 0;
+
+}
+.section6 .text6 h1{
+    font-size: 40px;
+    padding-top: 15px;
+}
+
+.section6 .text6 p{
+    color: rgba(0, 0, 0, 0.5);
+}
+.section6 .plan{
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.section6 .plan div{
+    width: 300px;
+    height: 500px;
+    background-color: rgb(249, 249, 255);
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.section6 .plan div h1{
+    font-size: 50px;
+}
+.section6 .plan div h2{
+    font-weight: bold;
+}
+.section6 .plan div p{
+    color: rgba(0, 0, 0, 0.7);
+}
+.section6 .plan div .price{
+    font-size: 30px;
+}
+.section6 .plan div button{
+    padding: 10px 30px;
+    background-color: #8293ff;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+.section6 .plan div:hover {
+    background: linear-gradient(90deg, #8393ff 30%, #1d98f0); 
+    color: white;
+    transition: all 0.25s ease-in;
+    transform: scale(1.05);
+    border: 1px solid rgba(130, 147, 255, 0.5);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+}
+.section6 .plan div:hover button{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.footer{
+    color: #fff;
+    background-color: #000;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+
+/* Responsive */
+
+@media (max-width:768px){
+
+
+    .content1 h1{
+        margin-top: 300px;
+    }
+    .cont{
+        width: 80%;
+        margin: 40px 0px 0px 10px;
+    }
+
+    .formImg{
+        flex-direction: column;
+    }
+
+    .image-container img {
+        max-width: 80%; 
+        height: auto;
+        margin-top: 20px;
+    }
+
+
+    .content{
+        flex-direction: column;
+       
+    }
+
+    .card{
+        width: 80%;
+    }
+    
+    .card h3{
+        font-size: 26px;
+    }
+
+    .section6 {
+       margin-bottom: 50px;
+    }
+    .section6 .text6 h1{
+            font-size: 30px;
+    }
+    .section6 .text6 p{
+        width: 70%;
+        margin: auto;
+    }
+    .section6 .plan{
+        flex-direction: column;
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+        
+    }
+    .section6 .plan div{
+        height: 500px;
+        margin-top: 100px;
+    }
+}
